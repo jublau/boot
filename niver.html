@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Mãe!</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            display: flex;
+            flex-direction: column; /* Altera a direção do flex para coluna */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .photo-grid img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .presente {
+            display: block;
+            margin: 20px auto 0; /* Margem superior para posicionar abaixo do conteúdo */
+            width: 150px; /* Tamanho reduzido do ícone */
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .presente img {
+            width: 100%; /* Garante que a imagem ocupe 100% do contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .presente:hover {
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+        .hidden {
+            display: none;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Feliz Aniversário, Mamãe! ✨</h1>
+    <p>Hoje é um dia muito especial, pois celebramos o nascimento de uma pessoa incrível! Você é a mulher mais forte e inspiradora que eu conheço, muito obrigada por ser você, muito obrigada por ser minha mãe.</p>
+
+    <!-- Espaço para fotos -->
+    <div class="photo-grid">
+        <img src="unnamed.jpg" alt="Foto 1">
+        <img src="unnamed (1).jpg" alt="Foto 2">
+        <img src="1000497847.jpg" alt="Foto 5">
+        <img src="unnamed (3).jpg" alt="Foto 4">
+        <img src="unnamed (4).jpg" alt="Foto 5">
+        <img src="unnamed (2).jpg" alt="Foto 3">
+    </div>
+
+    <!-- Mensagem de surpresa -->
+    <div id="surpriseMessage" class="hidden message">
+        <p>Mãe, você é a pessoa mais importante da minha vida. Obrigado por tudo o que você faz por mim. Eu te amo infinitamente!</p>
+        <p>Que este dia seja tão especial quanto você é para mim! 💖</p>
+    </div>
+</div>
+
+<!-- Ícone do presente -->
+<a href="surpresa.html" class="presente">
+    <img src="4530656.png" alt="presente">
+</a>
+
+</body>
+</html>
